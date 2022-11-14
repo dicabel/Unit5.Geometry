@@ -36,6 +36,16 @@ class Point {
         y+= offY;
     }
 }
+//Create the class Segment which has 2 points (startPoint and endPoint)
+//It will have 2 constructors: with no arguments it will create 2 points (0, 0)
+
+class Segment {
+    Point startPoint, endPoint;
+    public Segment() {
+        Point startPoint = new Point();
+        Point endPoint = new Point();
+    }
+}
 
 public class Exercises5_15 {
     public static void main(String[] argv) {
@@ -44,7 +54,6 @@ public class Exercises5_15 {
         p.moveTo(11, 1);
         System.out.println(p.toString());
     }
-
 }
 class Main2{
     public static void main(String[] argv) {
@@ -54,5 +63,10 @@ class Main2{
         p2.setOffset(4,4);
         System.out.println(p1.toString());
         System.out.println(p2.toString());
+    }
+}
+class Main3{
+    public static void main(String[] argv){
+        Segment segm = new Segment();
     }
 }
