@@ -45,6 +45,10 @@ class Segment {
         Point startPoint = new Point();
         Point endPoint = new Point();
     }
+    public Segment(Point a, Point b){
+        this.startPoint = a;
+        this.startPoint = b;
+    }
 }
 
 public class Exercises5_15 {
